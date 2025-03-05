@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <meta name="description" content="" />
+    <base target="_self" />
+    <!-- icon -->
+    <link rel="shortcut icon" href="" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./asset/css/style/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Todo List</h1>
+    </header>
+    <form action="">
+      <input type="text" name="" id="" value="learning" />
+      <input
+        type="number"
+        min="1"
+        max="12"
+        placeholder="M"
+        name="month"
+        id=""
+        value="6"
+        required
+      />
+      <input
+        type="number"
+        min="1"
+        max="31"
+        placeholder="D"
+        name="date"
+        id=""
+        value="20"
+        required
+      />
+      <button type="submit">Add into List</button>
+    </form>
+    <!-- 排序 -->
+    <div class="sort">
+      <button>Sort By Time</button>
+    </div>
+    <!-- 清單存放 -->
+    <section></section>
+    <script src="./asset/js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+i {
+  pointer-events: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(90deg, #11e6f1, #19f562);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  h1 {
+    font-size: 2.5rem;
+    color: #fff;
+  }
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  input,
+  button {
+    border: none;
+    padding: 0.25rem 0.5rem;
+    font-size: 1.75rem;
+    margin: 0.1rem;
+  }
+  input[type="number"] {
+    width: 50px;
+    text-align: center;
+  }
+  //移除input type="number"的上下箭
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  button {
+    background: #00ad6d;
+    color: #ffffff;
+    cursor: pointer;
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  div.todo {
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    margin: 0.25rem 0;
+    transition: all 0.2s ease;
+
+    p {
+      background-color: white;
+      color: black;
+      padding: 0.25rem 0.5rem;
+      font-size: 1.75rem;
+    }
+    p.todo-text {
+      width: 100%;
+    }
+    p.todo-time {
+      width: 50%;
+      text-align: center;
+    }
+    button {
+      padding: 0.4rem 0.5rem;
+      font-size: 1.75rem;
+      border: none;
+      cursor: pointer;
+      color: #fff;
+
+      &.complete {
+        background: #00d323;
+      }
+      &.trash {
+        background: #ff0000;
+      }
+    }
+  }
+}
+
+.done {
+  opacity: 0.5;
+  text-decoration: line-through;
+  text-decoration-thickness: 0.2rem;
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleDown {
+  to {
+    transform: scale(0);
+  }
+}
