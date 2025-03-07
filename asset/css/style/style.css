@@ -79,7 +79,7 @@ section div.todo p.todo-text {
   width: 100%;
 }
 section div.todo p.todo-time {
-  width: 50%;
+  width: 10.5rem;
   text-align: center;
 }
 section div.todo button {
