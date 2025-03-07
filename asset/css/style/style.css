@@ -96,6 +96,21 @@ section div.todo button.trash {
   background: #ff0000;
 }
 
+div.sort {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+div.sort button {
+  background: #00ad6d;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.75rem;
+}
+
 .done {
   opacity: 0.5;
   text-decoration: line-through;
